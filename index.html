@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistem Penilaian Kinerja - KPU Kabupaten Karimun</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    
+    /* Gradasi Merah Marun Mewah */
+    .bg-maroon-gradient {
+      background: radial-gradient(circle at top center, #800020 0%, #4a0011 50%, #2b000a 100%);
+    }
+
+    /* Efek Gradasi Emas untuk Teks dan Ornamen */
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #bf953f 0%, #fcf6ba 25%, #b38728 50%, #fbf5b7 75%, #aa771c 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .gold-border {
+      border-color: #d4af37;
+    }
+  </style>
+</head>
+<body class="bg-maroon-gradient min-h-screen flex flex-col justify-between text-slate-100 relative overflow-x-hidden">
+
+  <!-- Ornamen Emas Atas (Top Border Accent) -->
+  <div class="w-full h-1.5 bg-gradient-to-r from-amber-600 via-yellow-200 to-amber-600 shadow-lg"></div>
+
+  <!-- Main Content Container -->
+  <main class="flex-1 flex flex-col items-center justify-center px-4 py-8 relative z-10">
+    <div class="max-w-4xl w-full text-center">
+      
+      <!-- Header / Logo di Tengah Atas -->
+      <div class="flex flex-col items-center justify-center mb-6">
+        <div class="p-3 rounded-full bg-white/5 backdrop-blur-sm border border-amber-400/30 shadow-2xl mb-4">
+          <img src="https://lh3.googleusercontent.com/d/13hCS79nRll5QEsyXQW0Q4gkwi5WVloet" alt="Logo KPU" class="h-20 sm:h-24 object-contain filter drop-shadow-md">
+        </div>
+        
+        <!-- Judul Lembaga -->
+        <h1 class="text-xl sm:text-2xl font-bold tracking-wide text-amber-200 uppercase">
+          KPU KABUPATEN KARIMUN
+        </h1>
+        <p class="text-xs sm:text-sm text-amber-100/80 tracking-widest uppercase mt-1">
+          Subbagian SDM & Parmas
+        </p>
+      </div>
+
+      <!-- Garis Pemisah Ornamen Emas -->
+      <div class="flex items-center justify-center space-x-2 my-4 max-w-xs mx-auto">
+        <div class="h-px bg-gradient-to-r from-transparent via-amber-400 to-transparent flex-1"></div>
+        <div class="w-2 h-2 rotate-45 bg-amber-300"></div>
+        <div class="h-px bg-gradient-to-r from-transparent via-amber-400 to-transparent flex-1"></div>
+      </div>
+
+      <!-- Section Title -->
+      <div class="mb-10">
+        <h2 class="text-3xl sm:text-4xl font-extrabold gold-gradient-text tracking-tight drop-shadow-sm">
+          Portal Penilaian Kinerja
+        </h2>
+        <p class="mt-2 text-slate-300 text-sm sm:text-base max-w-lg mx-auto font-light">
+          Silakan pilih kategori penilaian untuk mengakses formulir evaluasi yang sesuai.
+        </p>
+      </div>
+
+      <!-- Cards Grid -->
+      <div class="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+        
+        <!-- Opsi 1: Kasubbag -->
+        <a href="https://kpukarimunkab-sdm.github.io/Penilaian/" 
+           class="group bg-slate-900/60 backdrop-blur-md p-8 rounded-2xl border border-amber-500/30 shadow-2xl hover:border-amber-400 hover:bg-slate-900/80 transition-all duration-300 flex flex-col justify-between text-left relative overflow-hidden">
+          <!-- Akses Asimetris / Accent Line -->
+          <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-amber-500 via-yellow-300 to-amber-600"></div>
+          <div>
+            <div class="w-12 h-12 bg-amber-500/10 border border-amber-400/30 text-amber-300 rounded-xl flex items-center justify-center mb-6 group-hover:bg-amber-500 group-hover:text-slate-950 transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-amber-200 mb-2 group-hover:text-amber-300 transition-colors">
+              Penilaian Kasubbag
+            </h3>
+            <p class="text-slate-300 text-sm leading-relaxed mb-6 font-light">
+              Akses instrumen dan formulir evaluasi kinerja khusus untuk Kepala Subbagian.
+            </p>
+          </div>
+          <div class="flex items-center text-sm font-semibold text-amber-400 group-hover:translate-x-1 transition-transform">
+            <span>Buka Formulir</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+        </a>
+
+        <!-- Opsi 2: Pegawai -->
+        <a href="https://kpukarimunkab-sdm.github.io/Penilaian/index2.html" 
+           class="group bg-slate-900/60 backdrop-blur-md p-8 rounded-2xl border border-amber-500/30 shadow-2xl hover:border-amber-400 hover:bg-slate-900/80 transition-all duration-300 flex flex-col justify-between text-left relative overflow-hidden">
+          <!-- Akses Asimetris / Accent Line -->
+          <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-amber-500 via-yellow-300 to-amber-600"></div>
+          <div>
+            <div class="w-12 h-12 bg-amber-500/10 border border-amber-400/30 text-amber-300 rounded-xl flex items-center justify-center mb-6 group-hover:bg-amber-500 group-hover:text-slate-950 transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-amber-200 mb-2 group-hover:text-amber-300 transition-colors">
+              Penilaian Pegawai
+            </h3>
+            <p class="text-slate-300 text-sm leading-relaxed mb-6 font-light">
+              Akses instrumen dan formulir evaluasi kinerja berkala untuk seluruh Pegawai/Staf.
+            </p>
+          </div>
+          <div class="flex items-center text-sm font-semibold text-amber-400 group-hover:translate-x-1 transition-transform">
+            <span>Buka Formulir</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="w-full bg-black/40 border-t border-amber-500/20 py-4 text-center text-xs text-amber-200/60 relative z-10">
+    <p>&copy; KPU Kabupaten Karimun - Subbagian SDM & Parmas</p>
+  </footer>
+
+  <!-- Ornamen Emas Bawah (Bottom Border Accent) -->
+  <div class="w-full h-1 bg-gradient-to-r from-amber-600 via-yellow-200 to-amber-600"></div>
+
+</body>
+</html>
